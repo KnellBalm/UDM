@@ -82,7 +82,7 @@ def checkSubset(x, y, columns):
   ret = adjustedR2(score, x[columns], y)
   return {'model': model, 'adjR2': ret, 'columns': columns}
 
-# Scikit-learn - SequentialFeatureSelector
+# Scikit-learn - SequentialFeatureSelector <- 이거 봐보기
 from sklearn.feature_selection import SequentialFeatureSelector
 
 #전진선택법
@@ -111,8 +111,6 @@ def forward(x, y):
   return before_model
 
 #후진소거법
-
-
 def backward(x, y):
   selected_columns = list(x.columns)
 
@@ -133,7 +131,6 @@ def backward(x, y):
   return before_model
 
 # 전진+후진 선택법
-
 def forward_select(x, y, selected_columns):
   forward_columns = [col for col in x.columns if col not in selected_columns]
   result = []

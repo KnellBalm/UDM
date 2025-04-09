@@ -1,0 +1,4 @@
+# Ignore Python checkpoint files
+*-checkpoint.py
+# Ignore others
+*.swp
