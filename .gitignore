@@ -1,4 +1,28 @@
 # Ignore Python checkpoint files
 *-checkpoint.py
 # Ignore others
-*.swp
+*.sw
+*.log
+# Ignore log and csv files
+*.ipynb_checkpoints/
+*.shp
+*.prj
+*.dbf
+*.shx
+*.xlsx
+*.tif
+*.csv
+*.log
+*.cpg
+*.zip
+*.tar
+*.sbn
+*.sbx
+*.DBF
+*.PRJ
+*.SHX
+*.SHP
+*.TIF
+*.ZIP
+__pycache__/
+*.txt
